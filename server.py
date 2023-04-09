@@ -1,6 +1,8 @@
 import time
 import grpc
 from concurrent import futures
+# from proto import chat_pb2 as chat_pb2
+# from proto import chat_pb2_grpc as chat_pb2_grpc
 import proto.chat_pb2 as chat_pb2
 import proto.chat_pb2_grpc as chat_pb2_grpc
 

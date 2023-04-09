@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+message Message {
+    string content = 1;
+    int32 seq_number = 2;
+}
+
+message Like {
+    int32 message_seq = 1;
+}
+
+service Chat {
+    rpc SendMessage(Message) returns (Message) {}
+    rpc SendLike(Like) returns (Like) {}
+}
+
